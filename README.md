@@ -2,6 +2,32 @@
 
 Welcome to Dungeon Game, a 2D Dungeon Crawler where you navigate through challenging rooms filled with enemies and power-ups, all in a quest to survive and rack up a high score.
 
+
+## Table of Contents
+1. [Welcome](#dungeon-game)
+2. [Team Presentation](#team-presentation)
+3. [Game Description](#game-description)
+   - [Genre](#genre)
+   - [Storyline](#storyline)
+   - [Gameplay Mechanics](#gameplay-mechanics)
+   - [Development Process](#development-process)
+4. [Sprint 1: Domain Model and Use Case Diagram](#sprint-1-domain-model-and-use-case-diagram)
+   - [Domain Model](#domain-model)
+   - [Use Case Diagram](#use-case-diagram)
+5. [Sprint 2: Advanced Game Mechanics and System Interactions](#sprint-2-advanced-game-mechanics-and-system-interactions)
+   - [Use Case Diagram: Item Pickup](#use-case-diagram-item-pickup)
+   - [Use Case Diagram: Battle Mechanics](#use-case-diagram-battle-mechanics)
+   - [Domain Model: Extended Game Entities](#domain-model-extended-game-entities)
+   - [Use Case Diagram: Movement and Progression](#use-case-diagram-movement-and-progression)
+6. [Sprint 3 Analysis](#sprint-3-analysis)
+   - [Use Case: Use PowerUp](#use-case-use-powerup)
+   - [Class Diagram](#class-diagram)
+   - [Use Case: User Interface Interaction](#use-case-user-interface-interaction)
+   - [Use Case: Interact with Enemy](#use-case-interact-with-enemy)
+7. [Video Demonstration](#video-demonstration)
+
+
+
 ## Team Presentation
 
 | Member Name        | Role          | Bio           | Contributions |
@@ -172,3 +198,7 @@ This diagram captures the movement mechanics within the game:
   2. The player and enemy enter a loop of attacking each other as long as their health is above 0.
   3. Optionally, if the enemy's health is above 0, the enemy can choose to defend.
 
+
+
+## Video Demonstration:
+Include video here

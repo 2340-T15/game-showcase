@@ -30,13 +30,14 @@ Welcome to Dungeon Game, a 2D Dungeon Crawler where you navigate through challen
 
 ## Team Presentation
 
-| Member Name        | Role          | Bio           | Contributions |
-|--------------------|---------------|---------------|---------------|
-| ![Team Member 1's Photo](Person1.jpg) | [Role in Team] | [Brief Bio]  | [Skills and Contributions] |
-| ![Team Member 2's Photo](Person2.jpg) | [Role in Team] | [Brief Bio]  | [Skills and Contributions] |
-| ![Team Member 3's Photo](Person3.jpg) | [Role in Team] | [Brief Bio]  | [Skills and Contributions] |
-| ![Team Member 4's Photo](Person4.jpg) | [Role in Team] | [Brief Bio]  | [Skills and Contributions] |
-| ![Team Member 5's Photo](Person5.jpg) | [Role in Team] | [Brief Bio]  | [Skills and Contributions] |
+| Member Name        | Role                        | Bio           | Contributions |
+|--------------------|-----------------------------|---------------|---------------|
+| ![Kunal Aneja's Photo](/PersonImages/Person1.jpg) | Scrum Master, Backend Developer | Kunal excels in backend development and architectural design, though he finds task distribution challenging. | Leading Agile sprints, backend architecture, initializing DCD, Factory pattern documentation, game-over screen implementation, backend-related unit tests |
+| ![Carter Robinson's Photo](/PersonImages/Person2.jpg) | Product Owner, Frontend Developer | Carter brings experience in general development with a knack for JavaFX applications, but is less inclined towards UI/Art tasks. | Prioritizing backlog, liaising with stakeholders, contributing to front-end development, DCD operations, Observer pattern documentation, enemy movement logic, UI-related testing |
+| ![Pranav Kuppili's Photo](/PersonImages/Person3.jpg) | Lead UI/UX Designer, Git Specialist | Pranav has a strong grasp of UI design, Git workflows, and server management but sometimes procrastinates. | Designing UI components, managing version control, ensuring UI consistency, documenting Observer pattern implementation, enemy diversity in rooms, collision detection logic, UI/UX unit tests |
+| ![Raymond Xu's Photo](/PersonImages/Person4.jpg) | Quality Assurance Lead, Developer | Raymond is adept with Git and development practices, though less experienced with Android Studio. | Overseeing QA processes, contributing to development tasks, expanding DCD, Factory pattern usage description, enemy movement visualization, game-over screen enhancements, QA testing |
+| ![Andrew DiBiasio's Photo](/PersonImages/Person5.jpg) | Lead Developer, Integration Specialist | Andrew has solid skills in Git and development but is still learning Android Studio. | Managing code integration, development tasks, detailing DCD relationships, implementing enemy creation patterns, Observer pattern for player-enemy updates, collision handling, integration testing |
+
 
 ---
 
@@ -69,34 +70,27 @@ Sprint 1 ➜ Sprint 2 ➜ Sprint 3 ➜ Sprint 4 ➜ Sprint 5
 | Feature 1    | 🖥️ Initial UI setup: start, configuration, and game screens.                | 🎮 Basic game screen elements: rooms, score display, and leaderboard.                | 🚀 Movement mechanics.            | 👾 Introduction of different enemy types.   | ⚔️ Attack mechanics.   |
 | Feature 2    | 📝 Name input and difficulty selection.                                      | ➡️ Temporary next button for navigation.                                              | 🚫 Wall collisions.               | ❤️ Health and damage system.                | ✨ Power-ups.            |
 
+## Dungeon Game Design Patterns and Impact
+
+| Design Pattern       | Application                   | Impact                                                       |
+|----------------------|-------------------------------|---------------------------------------------------------------|
+| Factory Pattern      | Initialization of game objects| Centralized creation, easier management of game entities.    |
+| Observer Pattern     | Player-enemy updates, UI      | Real-time communication, dynamic updates, better UX.        |
+| Singleton Pattern    | Essential components          | Ensures single instances, consistent state management.       |
+| Strategy Pattern     | Enemy behaviors               | Dynamic selection, varied enemy movements and attacks.      |
+| State Pattern        | Game state management         | Simplifies state transitions, ensures consistent gameplay.  |
+| Command Pattern      | User input handling            | Decouples input from logic, supports multiple controls.     |
+| Prototype Pattern*   | Object cloning                | Efficient creation of similar game objects.                 |
+
+*Note: Prototype Pattern is optional and used for efficient object cloning when applicable.
 
 
-🔹 **Sprint 1**: 
-   - 🖥️ Initial UI setup: start, configuration, and game screens.
-   - 📝 Name input and difficulty selection.
-
-🔹 **Sprint 2**: 
-   - 🎮 Basic game screen elements: rooms, score display, and leaderboard.
-   - ➡️ Temporary next button for navigation.
-
-🔹 **Sprint 3**: 
-   - 🚀 Movement mechanics.
-   - 🚫 Wall collisions.
-
-🔹 **Sprint 4**: 
-   - 👾 Introduction of different enemy types.
-   - ❤️ Health and damage system.
-
-🔹 **Sprint 5**: 
-   - ⚔️ Attack mechanics.
-   - ✨ Power-ups.
 
 ### Sprint 1: Domain Model and Use Case Diagram
 
-#### Domain Model
-![Sprint 1 Domain Model](./S1-assignments/DomainModel.drawio.png
-)
-The domain model represents the main entities in our game system, showing their relationships and attributes. Here are some key points:
+|Domain Model|Description|
+|-|-|
+|![Sprint 1 Domain Model](./S1-assignments/DomainModel.drawio.png) | The domain model represents the main entities in our game system, showing their relationships and attributes. Here are some key points: 
 - **Dungeon**: This is the main component of the game where all the action takes place. It contains multiple rooms and has a timer and scoreboard.
 - **Player**: Represents the user-controlled character. Players have attributes like username, health, and weapons. They can also use power-ups.
 - **Enemy**: The antagonists in the game. Each enemy has an ID and health attribute.

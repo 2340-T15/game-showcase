@@ -86,9 +86,6 @@ Sprint 1 ➜ Sprint 2 ➜ Sprint 3 ➜ Sprint 4 ➜ Sprint 5
 | Strategy Pattern     | Enemy behaviors               | Dynamic selection, varied enemy movements and attacks.      |
 | State Pattern        | Game state management         | Simplifies state transitions, ensures consistent gameplay.  |
 | Command Pattern      | User input handling            | Decouples input from logic, supports multiple controls.     |
-| Prototype Pattern*   | Object cloning                | Efficient creation of similar game objects.                 |
-
-*Note: Prototype Pattern is optional and used for efficient object cloning when applicable.
 
 
 
@@ -201,4 +198,4 @@ This diagram captures the movement mechanics within the game:
 
 
 ## Video Demonstration:
-Include video here
+[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](https://youtu.be/jEw-h_y2CN0)
